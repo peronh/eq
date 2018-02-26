@@ -384,7 +384,7 @@ ul {
     box-shadow: 0px 15px 40px 0 rgba(0, 0, 0, 0.3);
     width: 354px;
     margin: 30px auto 70px;
-    padding: 20px;
+    padding: 19px;
 }
 .card h3 {
     line-height: 40px;
@@ -395,6 +395,9 @@ ul {
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Museo100', sans-serif;
+}
+.card a {
+    color: #333333;
 }
 .grey {
     color: #888888;
