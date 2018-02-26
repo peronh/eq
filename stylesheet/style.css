@@ -1,0 +1,638 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500');
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/Museo300-Regular/Museo300-Regular.eot');
+    src: url('../fonts/Museo300-Regular/Museo300-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.woff') format('woff'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.ttf') format('truetype'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.svg#museo300') format('svg'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.otf') format('otf');
+}
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/Museo500-Regular/Museo500-Regular.eot');
+    src: url('../fonts/Museo500-Regular/Museo500-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.woff') format('woff'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.ttf') format('truetype'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.svg#museo300') format('svg'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.otf') format('otf');
+}
+@font-face {
+    font-family: 'museo100';
+    src: url('../fonts/Museo100/Museo_100.woff') format('woff'),
+         url('../fonts/Museo100/Museo_100.ttf') format('truetype'),
+         url('../fonts/Museo100/Museo_100.woff2') format('woff2');
+}
+/*  font-family: 'Montserrat', sans-serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    min-width: 320px;
+}
+
+.clear {
+    clear: both;
+}
+/* ----- desktop menu -----*/
+
+#desktop {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    background: transparent;
+    z-index: 800;
+}
+#desktop a {
+    font-family: 'Museo300', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 19px;
+    display: none;
+}
+
+/* ----sidenav ----*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #8e3d8c;
+    text-align: center;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-weight: normal;
+    margin-bottom: 1px;
+    display: block;
+    font-family: Museo500;
+    font-size: 24px;
+    transition: 0.3s;
+    color: #8e3d8c;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 52px;
+    margin-left: 50px;
+    color: #8e3d8c;
+    font-weight: 100;
+}
+#filter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #292b2c;
+    opacity: .8;
+    z-index: 999;
+    display: none;
+}
+.head {
+    position: relative;
+    height: 650px;
+    background-image: linear-gradient(to right, #602e6d, #d12049);
+    margin-bottom: 30px;
+}
+.side-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 200%;
+    cursor: pointer;
+}
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 89px;
+    height: 50px;
+}
+.head-text p {
+    font-family: 'museo300';
+    line-height: normal;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.iq{
+    display: none;
+}
+.eq-btn {
+    width: 290px;
+    height: 330px;
+    margin: 32px auto 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.eq-btn p, h3 {
+    font-family: Museo500;
+    font-size: 30px;
+    line-height: 20px;
+    padding: 6px 0;
+}
+.eq-btn h3 {
+    font-size: 20px;
+    padding: 6px 0;
+}
+.eq-btn h4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 10px;
+}
+button {
+    display: block;
+    border-radius: 4px;
+    background-color: #8e3d8c;
+    margin: 30px auto 0;
+    width: 250px;
+    height: 47px;
+}
+.eq-btn a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contain {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+}
+.contain-text {
+    padding: 0;
+}
+.contain p {
+    padding: 10px 0;
+}
+
+/*--------carousel ----------*/
+.carousel-back {
+    background-color: #e0e0e0;
+    padding:0 15px;
+    margin-top: 30px;
+}
+ .carousel-inner{
+     background-color: #e0e0e0;
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin-bottom: 25px;
+}
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 0;
+    background-color: #585858;
+}
+.carousel img {
+    width: 100%;
+}
+.col-md-4 {
+    position: relative;
+    width: 33%;
+    margin-bottom: -3px;
+    margin-left: -2px;
+}
+.name {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    text-align: right;
+}
+.firstName {
+    font-size: 24px;
+    font-family: Museo500;
+
+}
+.secondName {
+    font-size: 14px;
+    font-family: Museo100;
+}
+
+/*--------carousel ----------*/
+#item-2 {
+    margin-top: 60px;
+}
+.layer img {
+    display: block;
+    width: 100%;
+    max-width: 355px;
+    margin: 25px auto;
+}
+.layer-4 {
+    display: block;
+    margin: -10px auto 0;
+    max-width: 270px;
+}
+.number-list {
+    margin-bottom: 65px;
+}
+.number-list ol {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e3d8c;
+    padding-left: 15px;
+}
+.number-list li {
+    padding: 6px;
+}
+.number-list span {
+    color: #333333;
+    font-weight: 300;
+}
+
+.contain-text-2 {
+    margin: 0 auto 50px;
+}
+/*.contain-text-2 */.strong {
+    font-weight: 500;
+}
+.contain-text-color {
+    background-image: linear-gradient(to right, #602e6d, #d12049);
+    width: 100%;
+    color: #ffffff;
+    text-align: justify;    
+    padding: 45px 0;
+}
+#item-4 {
+    margin-top: 30px;
+}
+
+.contain-text-color h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contain-text-color p {
+    font-size: 14px;
+    font-weight: 200;
+    padding: 10px 0;
+    /*max-width: 576px;*/
+    margin: 0 auto;
+}
+
+.contain-text-color p strong {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.layer-3 {
+    background-color: #e0e0e0;
+    width: 100%;
+}
+
+/*   */
+.list {
+    margin-bottom: 50px;
+}
+.list-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.list span {
+    line-height: 30px;
+    color: #333333;
+}
+
+.last {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.last span{
+    line-height: 20px;
+    margin-left: -15px;
+}
+
+ul {
+    padding-left: 15px;
+    color: #8e3d8c;
+    font-weight: 300;
+}
+
+/*---- parallax -----*/
+
+.view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0 40px;
+}
+.place {
+    font-family: Museo300;
+    font-size: 48px;
+    padding: 30px;
+}
+.view p {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+}
+/* ---  ticket ---*/
+
+.ticket-piece {
+    position: relative;
+    width: 100%;
+    max-width: 355px;
+    margin: 30px auto;
+    padding: 12px 20px 15px;
+    border: 1px solid #aaaaaa;
+}
+.ticket {
+    margin-top: -15px;
+}
+.ticket p {
+    font-family: Museo500;
+    font-size: 24px;
+    height: 100%;
+    color: #8e3d8c;
+}
+
+.dashed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(100% - 20px);
+    border-right: 1px dashed #888888;
+}
+
+.ticket-piece span {
+    color: #888888;
+}
+
+/* ticketpro */
+
+.card {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 40px 0 rgba(0, 0, 0, 0.3);
+    max-width: 355px;
+    margin: 30px auto 70px;
+    padding: 20px;
+}
+.card h3 {
+    line-height: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.card-p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Museo100;
+}
+.grey {
+    color: #888888;
+    font-style: italic;
+}
+
+.form-group {
+    margin: 0 auto;
+}
+.form-control {
+    width: 100%;
+    height: 47px;
+    display: block;
+    margin: 8px 0 16px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    display: block;
+    font-size: 18px;
+    margin: 30px auto 15px;
+    color: #ffffff;
+    font-weight: normal;
+}
+.shop {
+    text-align: center;
+}
+
+/* ---------------------------------------------*/
+
+.check {
+    position: relative;
+}
+.custom-control {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.custom-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    background-color: #ffff;
+    border: 1px solid grey;
+    border-radius:4px;
+}
+.custom-control:hover input ~ .checkmark {
+    background-color: #ffff;
+}
+
+.custom-control input:checked ~ .checkmark {
+    background-color: #ffff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-control input:checked ~ .checkmark:after {
+    display: block;
+
+}
+
+.custom-control .checkmark:after {
+   /* font-family: SegoeUISymbol;*/
+    left: 9px;
+    top: 2px;
+    width: 5px;
+    height: 14px;
+    border: solid grey;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+}
+/* -----------------------------------------------*/
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: Museo300;
+    font-size: 36px;
+    font-weight: normal;
+    color: #8e3d8c;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btntop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2000;
+    background-image: linear-gradient(to right, #602e6d, #d12049);
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: .6;
+    display: none;
+}
+i.fa.fa-arrow-up {
+    margin: 8px 10px;
+    font-size: 140%;
+}
+
+@media (min-width: 768px) {
+
+    #desktop .d-block-768 {
+        display: inline-block;
+    }
+
+    .contain{
+        width: 100%;
+        max-width: 800px;
+    }
+    .head-text p{
+        font-size: 48px;
+        width: 740px ;
+        margin: 0 auto 60px;
+    }
+    .iq{
+        display: block;
+        float: left;
+        width: 300px;
+    }
+    .iq img {
+        width: 100%;
+    }
+    .eq-btn {
+        float: right;
+        margin: 0;
+        width: 355px;
+    }
+    .contain-title {
+        width: 100%;
+    }
+    .contain-text, .number-list {
+        width: 45%;
+    }
+    .name {
+        top: -100px;
+    }
+    .carousel-back {
+        margin-top: 60px;
+    }
+    .firstName {
+        font-size: 48px;
+    }
+    .secondName {
+        font-size: 24px;
+    }
+    .number-list, .card {
+        float: right;
+    }
+    .layer-2, .layer-4, .ticket  {
+        float: left;
+    }
+    .ticket {
+        margin-top: 30%;
+        width: 50%;
+    }
+    .list {
+        width: 45%;
+        float: right;
+    }
+    .contain-text {
+        float: left;
+    }
+    .layer-3 {
+        float: none;
+    }
+}
+
+@media (min-width: 992px){
+
+    #desktop .d-block-992 {
+        display: inline-block;
+    }
+
+}@media (min-width: 1200px){
+    #desktop {
+        right: 0;
+    }
+    #desktop a {
+        display: inline-block;
+    }
+    .side-menu {
+        display: none;
+    }
+}
