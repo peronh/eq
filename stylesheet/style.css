@@ -330,13 +330,14 @@ ul {
 }
 /*---- parallax -----*/
 .view {
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     color: #ffffff;
     text-align: center;
-    margin: 10px 0 40px;
+    margin: 10px 0 30px;
 }
 .place {
     font-family: 'Museo300', sans-serif;
@@ -520,8 +521,6 @@ i.fa.fa-arrow-up {
     .contain{
         width: 100%;
         max-width: 800px;
-        padding-right: 0;
-        padding-left: 0;
     }
     .head-text p{
         font-size: 48px;
@@ -544,8 +543,17 @@ i.fa.fa-arrow-up {
     .contain-title {
         width: 100%;
     }
+    #item-2 {
+        margin: 28px 0;
+    }
+    #item-4, #item-5 {
+        margin-bottom: 26px;
+    }
+    #item-7 {
+        margin-bottom: 20px;
+    }
     .contain-text, .number-list {
-        width: 49%;
+        width: 48%;
     }
     .name {
         top: -100px;
@@ -559,7 +567,7 @@ i.fa.fa-arrow-up {
     .secondName {
         font-size: 24px;
     }
-    .number-list, .card {
+    .number-list, .card, .layer-1 {
         float: right;
     }
     .layer-2, .layer-4, .ticket  {
@@ -570,7 +578,7 @@ i.fa.fa-arrow-up {
         width: 49%;
     }
     .list {
-        width: 45%;
+        width: 49%;
         float: right;
     }
     .contain-text {
@@ -586,9 +594,16 @@ i.fa.fa-arrow-up {
     #desktop .d-block-992 {
         display: inline-block;
     }
+    .contain {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 1200px){
+    .contain {
+        width: 770px;
+    }
     #desktop {
         right: 0;
     }
@@ -601,6 +616,12 @@ i.fa.fa-arrow-up {
     .head-text p {
         width: 100%;
         font-size: 60px;
+    }
+    .layer img {
+        max-width: 370px!important;
+    }
+    .iq {
+        width: 370px;
     }
     h1 {
         font-size: 48px;
