@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
 @font-face {
     font-family: 'museo300';
     src: url('../fonts/Museo300-Regular/Museo300-Regular.eot');
@@ -24,8 +24,6 @@
          url('../fonts/Museo100/Museo_100.ttf') format('truetype'),
          url('../fonts/Museo100/Museo_100.woff2') format('woff2');
 }
-/*  font-family: 'Montserrat', sans-serif;  */
-
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +80,7 @@ body {
     font-weight: normal;
     margin-bottom: 1px;
     display: block;
-    font-family: Museo500;
+    font-family: 'Museo500', sans-serif;
     font-size: 24px;
     transition: 0.3s;
     color: #8e3d8c;
@@ -129,14 +127,13 @@ body {
     height: 50px;
 }
 .head-text p {
-    font-family: 'museo300';
+    font-family: 'Museo300', sans-serif;
     line-height: normal;
     font-size: 36px;
     color: #fff;
     text-align: center;
     padding-top: 100px;
 }
-
 .iq{
     display: none;
 }
@@ -147,11 +144,10 @@ body {
     padding: 20px;
     border-radius: 8px;
     background-color: #ffffff;
-    box-shadow: 0px 15px 40px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.3);
 }
-
 .eq-btn p, h3 {
-    font-family: Museo500;
+    font-family: 'Museo500', sans-serif;
     font-size: 30px;
     line-height: 20px;
     padding: 6px 0;
@@ -179,7 +175,6 @@ button {
     color: #ffffff;
     text-decoration: none;
 }
-
 .contain {
     max-width: 576px;
     margin: 0 auto;
@@ -194,7 +189,6 @@ button {
 .contain p {
     padding: 10px 0;
 }
-
 /*--------carousel ----------*/
 .carousel-back {
     background-color: #e0e0e0;
@@ -234,14 +228,13 @@ button {
 }
 .firstName {
     font-size: 24px;
-    font-family: Museo500;
+    font-family: 'Museo500', sans-serif;
 
 }
 .secondName {
     font-size: 14px;
-    font-family: Museo100;
+    font-family: 'Museo100', sans-serif;
 }
-
 /*--------carousel ----------*/
 #item-2 {
     margin-top: 60px;
@@ -277,7 +270,7 @@ button {
 .contain-text-2 {
     margin: 0 auto 50px;
 }
-/*.contain-text-2 */.strong {
+.strong {
     font-weight: 500;
 }
 .contain-text-color {
@@ -290,12 +283,10 @@ button {
 #item-4 {
     margin-top: 30px;
 }
-
 .contain-text-color h1 {
     color: #ffffff;
     margin-bottom: 20px;
 }
-
 .contain-text-color p {
     font-size: 14px;
     font-weight: 200;
@@ -303,18 +294,15 @@ button {
     /*max-width: 576px;*/
     margin: 0 auto;
 }
-
 .contain-text-color p strong {
     font-style: italic;
     font-weight: 500;
 }
-
 .layer-3 {
     background-color: #e0e0e0;
     width: 100%;
 }
-
-/*   */
+/* ---- list ----- */
 .list {
     margin-bottom: 50px;
 }
@@ -323,30 +311,24 @@ button {
     font-weight: 500;
     margin-top: 20px;
 }
-
 .list span {
     line-height: 30px;
     color: #333333;
 }
-
 .last {
     list-style-type: none;
     margin-top: 5px;
 }
-
 .last span{
     line-height: 20px;
     margin-left: -15px;
 }
-
 ul {
     padding-left: 15px;
     color: #8e3d8c;
     font-weight: 300;
 }
-
 /*---- parallax -----*/
-
 .view {
     display: flex;
     align-items: center;
@@ -357,7 +339,7 @@ ul {
     margin: 10px 0 40px;
 }
 .place {
-    font-family: Museo300;
+    font-family: 'Museo300', sans-serif;
     font-size: 48px;
     padding: 30px;
 }
@@ -368,7 +350,6 @@ ul {
     padding: 10px;
 }
 /* ---  ticket ---*/
-
 .ticket-piece {
     position: relative;
     width: 100%;
@@ -381,12 +362,11 @@ ul {
     margin-top: -15px;
 }
 .ticket p {
-    font-family: Museo500;
+    font-family: 'Museo500', sans-serif;
     font-size: 24px;
     height: 100%;
     color: #8e3d8c;
 }
-
 .dashed {
     position: absolute;
     top: 0;
@@ -395,13 +375,10 @@ ul {
     width: calc(100% - 20px);
     border-right: 1px dashed #888888;
 }
-
 .ticket-piece span {
     color: #888888;
 }
-
 /* ticketpro */
-
 .card {
     border-radius: 8px;
     background-color: #ffffff;
@@ -418,13 +395,12 @@ ul {
 .card-p {
     font-size: 18px;
     text-transform: uppercase;
-    font-family: Museo100;
+    font-family: 'Museo100', sans-serif;
 }
 .grey {
     color: #888888;
     font-style: italic;
 }
-
 .form-group {
     margin: 0 auto;
 }
@@ -436,7 +412,6 @@ ul {
     border: 1px solid #888888;
     border-radius: 4px;
 }
-
 .btn-primary {
     display: block;
     font-size: 18px;
@@ -447,9 +422,7 @@ ul {
 .shop {
     text-align: center;
 }
-
-/* ---------------------------------------------*/
-
+/* -----------checkbox---------*/
 .check {
     position: relative;
 }
@@ -486,7 +459,6 @@ ul {
 .custom-control:hover input ~ .checkmark {
     background-color: #ffff;
 }
-
 .custom-control input:checked ~ .checkmark {
     background-color: #ffff;
 }
@@ -496,14 +468,10 @@ ul {
     position: absolute;
     display: none;
 }
-
 .custom-control input:checked ~ .checkmark:after {
     display: block;
-
 }
-
 .custom-control .checkmark:after {
-   /* font-family: SegoeUISymbol;*/
     left: 9px;
     top: 2px;
     width: 5px;
@@ -513,17 +481,12 @@ ul {
     -webkit-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     transform: rotate(30deg);
-
 }
-/* -----------------------------------------------*/
-
-
 .uppercase {
     text-transform: uppercase;
 }
-
 h1 {
-    font-family: Museo300;
+    font-family: 'Museo300', sans-serif;
     font-size: 36px;
     font-weight: normal;
     color: #8e3d8c;
@@ -531,7 +494,6 @@ h1 {
     text-align: center;
     padding: 15px 0;
 }
-
 .btntop {
     position: fixed;
     bottom: 10px;
@@ -550,16 +512,16 @@ i.fa.fa-arrow-up {
     margin: 8px 10px;
     font-size: 140%;
 }
-
 @media (min-width: 768px) {
 
     #desktop .d-block-768 {
         display: inline-block;
     }
-
     .contain{
         width: 100%;
         max-width: 800px;
+        padding-right: 0;
+        padding-left: 0;
     }
     .head-text p{
         font-size: 48px;
@@ -583,7 +545,7 @@ i.fa.fa-arrow-up {
         width: 100%;
     }
     .contain-text, .number-list {
-        width: 45%;
+        width: 49%;
     }
     .name {
         top: -100px;
@@ -592,7 +554,7 @@ i.fa.fa-arrow-up {
         margin-top: 60px;
     }
     .firstName {
-        font-size: 48px;
+        font-size: 49px;
     }
     .secondName {
         font-size: 24px;
@@ -603,9 +565,9 @@ i.fa.fa-arrow-up {
     .layer-2, .layer-4, .ticket  {
         float: left;
     }
-    .ticket {
+    .ticket{
         margin-top: 30%;
-        width: 50%;
+        width: 49%;
     }
     .list {
         width: 45%;
@@ -624,8 +586,9 @@ i.fa.fa-arrow-up {
     #desktop .d-block-992 {
         display: inline-block;
     }
+}
 
-}@media (min-width: 1200px){
+@media (min-width: 1200px){
     #desktop {
         right: 0;
     }
@@ -635,4 +598,25 @@ i.fa.fa-arrow-up {
     .side-menu {
         display: none;
     }
+    .head-text p {
+        width: 100%;
+        font-size: 60px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .card , .ticket-piece {
+       max-width: 370px!important;
+    }
+    .ticket {
+        padding: 0;
+    }
 }
+
+@media (min-width: 1600px){
+
+    #desktop  {
+        right: 360px;
+    }
+}
+
