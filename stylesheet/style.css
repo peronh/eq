@@ -30,7 +30,6 @@
     border: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333333;
@@ -41,7 +40,6 @@ body {
     clear: both;
 }
 /* ----- desktop menu -----*/
-
 #desktop {
     position: absolute;
     top: 30px;
@@ -167,7 +165,7 @@ button {
     border-radius: 4px;
     background-color: #8e3d8c;
     margin: 30px auto 0;
-    width: 250px;
+    width: 100%;
     height: 47px;
 }
 .eq-btn a {
@@ -176,7 +174,7 @@ button {
     text-decoration: none;
 }
 .contain {
-    max-width: 576px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
     text-align: justify;
@@ -337,7 +335,7 @@ ul {
     flex-flow: column;
     color: #ffffff;
     text-align: center;
-    margin: 10px 0 30px;
+    margin-bottom: 30px;
 }
 .place {
     font-family: 'Museo300', sans-serif;
@@ -353,8 +351,8 @@ ul {
 /* ---  ticket ---*/
 .ticket-piece {
     position: relative;
-    width: 100%;
-    max-width: 355px;
+    /*width: 100%;*/
+    width: 354px;
     margin: 30px auto;
     padding: 6px 20px 14px;
     border: 1px solid #aaaaaa;
@@ -384,7 +382,7 @@ ul {
     border-radius: 8px;
     background-color: #ffffff;
     box-shadow: 0px 15px 40px 0 rgba(0, 0, 0, 0.3);
-    max-width: 355px;
+    width: 354px;
     margin: 30px auto 70px;
     padding: 20px;
 }
@@ -463,7 +461,6 @@ ul {
 .custom-control input:checked ~ .checkmark {
     background-color: #ffff;
 }
-
 .checkmark:after {
     content: "";
     position: absolute;
@@ -495,9 +492,13 @@ h1 {
     text-align: center;
     padding: 15px 0;
 }
+.color-line {
+    height: 10px;
+    background-image: linear-gradient(to right, #cf2640, #dad830);
+}
 .btntop {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
     z-index: 2000;
     background-image: linear-gradient(to right, #602e6d, #d12049);
@@ -513,14 +514,22 @@ i.fa.fa-arrow-up {
     margin: 8px 10px;
     font-size: 140%;
 }
-@media (min-width: 768px) {
+    @media (min-width: 576px){
+        .contain {
+            width: 546px;
+        }
+    }
+
+    @media (min-width: 768px) {
 
     #desktop .d-block-768 {
         display: inline-block;
     }
     .contain{
-        width: 100%;
-        max-width: 800px;
+        width: 738px;
+        padding-right: 8px;
+        padding-left: 8px;
+        /*max-width: 800px;*/
     }
     .head-text p{
         font-size: 48px;
@@ -551,6 +560,9 @@ i.fa.fa-arrow-up {
     }
     #item-7 {
         margin-bottom: 20px;
+    }
+    .view {
+        height: 600px!important;
     }
     .contain-text, .number-list {
         width: 48%;
@@ -594,15 +606,42 @@ i.fa.fa-arrow-up {
     #desktop .d-block-992 {
         display: inline-block;
     }
+    .head-contain {
+        width: 800px!important;
+    }
+    .eq-btn {
+        width: 385px!important;
+        height: 290px;
+        padding-top: 15px;
+    }
     .contain {
+        width: 770px;
         padding-right: 0;
         padding-left: 0;
+    }
+    .layer img {
+        max-width: 370px!important;
+    }
+    .view {
+        height: 720px!important;
     }
 }
 
 @media (min-width: 1200px){
     .contain {
         width: 770px;
+    }
+    .iq {
+        width: 370px;
+        margin-top: -45px;
+    }
+    .head-contain {
+        width: 950px!important;
+    }
+    .eq-btn {
+        width: 470px!important;
+        height: 270px;
+        padding-top: 15px;
     }
     #desktop {
         right: 0;
@@ -617,12 +656,6 @@ i.fa.fa-arrow-up {
         width: 100%;
         font-size: 60px;
     }
-    .layer img {
-        max-width: 370px!important;
-    }
-    .iq {
-        width: 370px;
-    }
     h1 {
         font-size: 48px;
     }
@@ -635,9 +668,13 @@ i.fa.fa-arrow-up {
 }
 
 @media (min-width: 1600px){
-
     #desktop  {
         right: 360px;
+    }
+}
+@media (min-width: 2500px){
+    #desktop  {
+        right: 1300px;
     }
 }
 
