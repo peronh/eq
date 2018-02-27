@@ -3,13 +3,13 @@ $(document).ready(function() {
         $("#mySidenav").css( {
             "width": "85vw", "transition":"width 200ms", "-webkit-transition":"width 300ms"});
         $("#filter").fadeIn(700);
-        //$("body").css({"position":"fixed"});
+        $("body").css({"position":"fixed"});
     });
     $(".closebtn, #mySidenav a").on("click", function() {
         $("#mySidenav ").css( {
             "width": "0", "transition":"width 200ms", "-webkit-transition":"width 300ms"});
         $("#filter").fadeOut(700);
-        //$("body").css({"position":"relative"});
+        $("body").css({"position":"relative"});
     });
 
 
