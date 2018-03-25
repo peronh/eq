@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    
     $(".side-menu").on("click", function() {
         $("#mySidenav").css( {
             "width": "85vw", "transition":"width 200ms", "-webkit-transition":"width 300ms"});
@@ -21,6 +23,8 @@ $(document).ready(function() {
             }, 700);
         }
     );
+        
+
 
     $(document).on("scroll", function() {
 

@@ -11,17 +11,17 @@
     <title>Eq fejlesztése</title>
 </head>
 <body>
-    <div id="desktop" class=" desktop-menu-item">
-        <a href="#item-1" class="d-block-768">Mi az EQ?</a>
-        <a href="#item-2" class="d-block-768">Miért fejleszd?</a>
-        <a href="#item-3" class="d-block-768">Hogyan fejleszd?</a>
-        <a href="#item-4" class="d-block-992">Kitől érdemes tanulnod?</a>
-        <a href="#item-5">Témák</a>
-        <a href="#item-6">Helyszín</a>
-        <a href="#item-7">Jelentkezés</a>
+    <div id="desktop" class="desktop-menu-item">
+        <a href="##item-1|300" class="d-block-768">Mi az EQ?</a>
+        <a href="##item-2|600" class="d-block-768">Miért fejleszd?</a>
+        <a href="##item-3|600" class="d-block-768">Hogyan fejleszd?</a>
+        <a href="##item-4|800" class="d-block-992">Kitől érdemes tanulnod?</a>
+        <a href="##item-5|900">Témák</a>
+        <a href="##item-6|1000">Helyszín</a>
+        <a href="##item-7|1000">Jelentkezés</a>
     </div>
     <!-- ===== molbile-menu  =====  -->
-    <div id="mySidenav" class="sidenav mobile-menu-item uppercase">
+    <div id="mySidenav" class="nav sidenav mobile-menu-item uppercase">
         <a href="#" class="closebtn"><img src="assets/times_icon.png" alt="times-icon" ></a>
         <a href="#item-1">Mi az EQ?</a>
         <a href="#item-2">Miért fejleszd?</a>
@@ -29,16 +29,17 @@
         <a href="#item-4">Kitől érdemes tanulnod?</a>
         <a href="#item-5">Témák</a>
         <a href="#item-6">Helyszín</a>
-        <a href="#item-7">Jelentkezés</a>
+        <a href="#item-7|1000">Jelentkezés</a>
     </div>
     <div id="filter"></div>
+
     <!-- ===== head  =====  -->
     <div class="head">
         <div class="logo">
             <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
         </div>
         <div class="side-menu">
-            <img src="assets/bars.png" alt="bars">
+            <img class="ssm-toggle-nav title="open nav" src="assets/bars.png" alt="bars">
         </div>
         <div class="head-text">
             <p class="uppercase">vedd kezedbe az életed irányítását</p>
@@ -302,7 +303,19 @@
 <script src="script/jquery-3.2.1.min.js"></script>
 <script src="script/popper.min.js"></script>
 <script src="script/bootstrap.min.js"></script>
+<script src="script/slideandswipe.js"></script>
+<script src="script/slideandswipe.min.js"></script>
+<script src="script/touchSwipe.min.js"></script>
 <script src="script/mdb.min.js"></script>
+<script src="script/anchor.js"></script>
 <script src="script/eq.js"></script>
+
+<div class="ssm-overlay ssm-toggle-nav"></div>
+
+    <script>
+            $(document).ready(function() {
+                $('.nav').slideAndSwipe();
+            });
+        </script>
 </body>
 </html>
